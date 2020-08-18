@@ -18,6 +18,14 @@ def index(request):
         reversed_sentence = " ".join(reversed_list)
     
         print(reversed_sentence)
+        
+        
+#             s = 'you shall.not pass.hello'
+
+#             r = ' '.join(reversed(s.split('.')))
+
+#             print(r)
+
 
 
     return render(request,'index.html',{'getvalue':reversed_sentence})
