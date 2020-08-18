@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>String Manipulation</title>
+        <style>
+            body
+            {
+                height: 100%;
+                width: 100%;
+            }
+            div{
+                width: 50%;
+            }
+            hr
+            {
+               height: 5;
+               background-color: black;
+            }
+            #ta 
+            {   
+                margin-left: 20%;
+                margin-top:-6%;   
+                font-size: 12px;
+                font-weight: bold;         
+            }
+            #ta1
+            {
+                 height: 15%;
+                 width: 80%;
+                 margin-top: -48;
+                 margin-left: 18%;
+                 border-style: solid ;
+                 
+            }
+            #tn
+            {
+                width: 10%;
+                height: 5%;
+                font-size: 22px;
+                margin-top: 3%;
+                
+            }
+            pre
+            {
+                margin-left: 20%;
+                font-size: 20px;
+                font-weight:bold;
+                         
+            }
+            #btn
+            {
+                margin-left: 40%;
+                width: 10%;
+                height: 5%;
+                
+            }
+            #info
+            {
+                margin-left: 45%;
+                margin-top:-27%;
+                
+            }
+            #p
+            {
+                background-color:skyblue;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <form action="" method="POST">
+          {% csrf_token %}
+        <div id="first"> 
+            <h2>String Manipulation</h2>
+            <hr>
+          <h3>Input String </h3>  
+
+            <textarea name="pradip" id="ta" rows="8" cols="70" >Hi there. My name is sam. This is my lucky day. i like coding so much.This is it.
+            </textarea>  
+           
+          <pre>Skip last <input id="tn" type="text" name="pdp"> words in a sentence</pre> 
+         
+         <input id="btn" type="submit" name="submit" value="Run">
+          
+          <h3>output String </h3>  
+          <textarea for="pdp" rows="8" cols="70" id="ta1">{{getvalue}}</textarea>
+
+          
+         
+          
+           
+        </div>
+
+        <div id="info">
+            <pre id="p">
+            Objective:
+                
+            (1)Reverse the sentence in a
+            paragraph except the last "n" words
+            in a sentence as mentioned in the 
+            Skip number field.
+
+            (2) This Skip number can be 0,1,2
+            or more
+           </pre>
+           </div>
+        </form>
+    </body>
+</html>
